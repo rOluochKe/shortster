@@ -2,15 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const ShortUrl = require('./models/shortUrl');
 
+require('dotenv').config();
+
 const app = express();
 
-mongoose.connect(
-  'mongodb+srv://shortster:Shortster123@cluster0.qlcga.mongodb.net/shortster?retryWrites=true&w=majority',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
-);
+mongoose.connect(process.env.DATABASE_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
