@@ -2,10 +2,10 @@
   "name": "shortster",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon index",
-    "test": "jest"
+    "start": "nodemon server",
+    "jest": "jest"
   },
   "keywords": [],
   "author": "",
