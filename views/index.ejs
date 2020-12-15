@@ -42,7 +42,7 @@
           <% shortUrls.forEach(shortUrl => { %>
           <tr>
             <td><a href="<%= shortUrl.full %>" target="_blank"><%= shortUrl.full %></a></td>
-            <td><a href="<%= shortUrl.short %>" target="_blank"><%= shortUrl.short %></a> Edit URL</td>
+            <td><a href="<%= shortUrl.short %>" target="_blank"><%= shortUrl.short %></a></td>
             <td><%= shortUrl.createdAt.toDateString() %></td>
             <td><%= shortUrl.visitedAt.toDateString() %></td>
             <td><%= shortUrl.clicks %></td>

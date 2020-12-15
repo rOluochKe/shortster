@@ -1,8 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const ShortUrl = require('./models/shortUrl');
 
 require('dotenv').config();
+
+const ShortUrl = require('./models/shortUrl');
 
 const app = express();
 
